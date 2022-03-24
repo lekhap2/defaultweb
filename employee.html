@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <title>Employee Form Validation</title>
+    <script src="demo.js"></script>
+</head>
+
+<body>
+    <center>
+        <h1>Employee Form</h1>
+        <table>
+            <tr>
+                <td>Employee Name</td>
+                <td>:</td>
+                <td><input type="text" id="empName" required/>
+                    <div style="color: red;" id="div_empName"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>Employee Mail</td>
+                <td>:</td>
+                <td><input type="text" id="mail" />
+                    <div style="color: red;" id="div_mail"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>Employee Contact</td>
+                <td>:</td>
+                <td><input type="text" id="contact" />
+                    <div style="color: red;" id="div_contact"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>Employee DOB</td>
+                <td>:</td>
+                <td><input type="text" id="dob" />
+                    <div style="color: red;" id="div_dob"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>:</td>
+                <td><input type="text" id="password" />
+                    <div style="color: red;" id="div_psd"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>Confirm Password</td>
+                <td>:</td>
+                <td><input type="text" id="cpass" />
+                    <div style="color: red;" id="div_cpass"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>:</td>
+                <td><input type="radio" id="gender" />Male<input type="radio" id="gender" />FeMale
+                    <div style="color: red;" id="div_gender"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>Department</td>
+                <td>:</td>
+                <td><select id="dept">
+                        <option value="">---------Select ---------</option>
+                        <option value="hr">Hr</option>
+                        <option value ="dev">Developemt</option>
+                        <option value ="training">Training</option>
+                    </select>
+                    <div style="color: red;" id="div_dept"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td>:</td>
+                <td><textarea id="address" cols="18" rows="4" maxlength="26" onkeypress="checkMaxLenth();"></textarea>
+                   <div style="color: red;" id="div_addr"></div>
+                </td>
+              
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><button onclick="validateForm()">Add</button>
+                    <button onclick="displayNames()">Display</button>
+                </td>
+            </tr>
+        </table><br />
+        <div id="result">
+            </div< /center>
+</body>
+
+</html>
